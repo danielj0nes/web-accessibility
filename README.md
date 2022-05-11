@@ -31,3 +31,6 @@
 
 * When using the JAWS screen reader, it first announces the section title ("Heading level one news and events") and then the article title ("Visited heading level 2 global temperature record"). It then announces "article" and proceeds to read the text of the article.
 * In order to announce the article title when the user is actually on the article, we can just pull the article header down into the article body and section. This way JAWS first announces "article" and then the title and contents.
+
+### Menu structure
+*Open the index.html file in your code editor, pay attention to the HTML code for the navigation menus. Do you think the generic div elements are good enough to convey the menu structure? Are there other HTML elements that are better at indicating sub-menu hierarchy?*

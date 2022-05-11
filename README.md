@@ -34,3 +34,4 @@
 
 ### Menu structure
 *Open the index.html file in your code editor, pay attention to the HTML code for the navigation menus. Do you think the generic div elements are good enough to convey the menu structure? Are there other HTML elements that are better at indicating sub-menu hierarchy?*
+* Using generic div elements when a relevant semantic tag, in this case `<nav>`, exists is not good for accessibility (as previously discussed). To indicate sub-menu hierarchy, it is better to start with a `<nav>` tag and then use, for example, a `<ul>` tag consisting of `<li>` components as this conveys more useful information for screen readers and other such tools.

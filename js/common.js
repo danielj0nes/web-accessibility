@@ -14,10 +14,12 @@ function openMenu(event) {
         document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
     for (var j = 0; j < dropDownMenus.length; j++) {
         dropDownMenus[j].classList.remove('show');
+        dropDownMenus[j].parentNode.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
     }
 
     if (!isOpen) {
         currentDropDownMenu.classList.add('show');
+        currentDropDownMenu.parentNode.querySelector('.nav-link').setAttribute('aria-expanded', 'true');
     }
 }
 

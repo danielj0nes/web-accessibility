@@ -34,4 +34,14 @@
 
 ### Menu structure
 *Open the index.html file in your code editor, pay attention to the HTML code for the navigation menus. Do you think the generic div elements are good enough to convey the menu structure? Are there other HTML elements that are better at indicating sub-menu hierarchy?*
-* Using generic div elements when a relevant semantic tag, in this case `<nav>`, exists is not good for accessibility (as previously discussed). To indicate sub-menu hierarchy, it is better to start with a `<nav>` tag and then use, for example, a `<ul>` tag consisting of `<li>` components as this conveys more useful information for screen readers and other such tools.
+
+* Using generic div elements when a relevant semantic tag, in this case `<nav>`, exists is not good for accessibility (as previously discussed). To indicate sub-menu hierarchy, it is better to start with a `<nav>` tag and then use, for example, a `<ul>` tag consisting of `<li>` components, as this conveys more useful information for screen readers and other such tools.
+
+### Drop-down menu
+*When you click on a menu item, if it has a sub-menu and the sub-menu is not displayed, the sub-menu would be shown visually. If you click the same menu item again, the sub-menu would be collapsed. Use the developer tool in Chrome to inspect the updates to the HTML code while the sub-menu displays or collapses. Do you think a screen reader user will be updated about the change of status, i.e. whether the sub-menu is displayed or not?*
+
+* When using the developer tool to inspect the updates to the HTML, we can see that expanding the menu item (if it has a sub-menu) causes the `<div class="dropdown-menu">` to change to `<div class="dropdown-menu show">`, which is handled by a JavaScript listener. When testing this with the JAWS screen reader, the change of status is not updated; the only feedback we get when clicking e.g., the "Education & research" menu item is: "Education and research link".
+
+*If not, try to fix the menu s.t. the screenreader will read "menu", "expanded/collapsed" correctly*
+
+* To fix the menu for the screenreader users, we can set the aria-expanded property to true/false on menu items when their sub-menus are expanded/collapsed. To achieve this, the `<a class="nav-link">` tags have been updated to contain `aria-expanded=false` property by default. The `openMenu()` function within the "common.js" module has been tweaked to set the property to `true` when expanded and `false` when collapsed again. Now when using JAWS, the screenreader correctly announces whether or not the menu is collapsed or expanded.

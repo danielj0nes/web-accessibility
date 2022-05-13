@@ -45,3 +45,16 @@
 *If not, try to fix the menu s.t. the screenreader will read "menu", "expanded/collapsed" correctly*
 
 * To fix the menu for the screenreader users, we can set the aria-expanded property to true/false on menu items when their sub-menus are expanded/collapsed. To achieve this, the `<a class="nav-link">` tags have been updated to contain `aria-expanded=false` property by default. The `openMenu()` function within the "common.js" module has been tweaked to set the property to `true` when expanded and `false` when collapsed again. Now when using JAWS, the screenreader correctly announces whether or not the menu is collapsed or expanded.
+
+### Menu keyboard interaction
+*It is common practice for keyboard users to use the ESC key to cancel an operation. Therefore, it would be a user experience enhancement if an opened sub-menu gets closed automatically when the user presses the ESC key. After closing, the menu header should be focused. Can you implement this feature by using JavaScript to listen to keyboard events on sub-menu and closes it if it is open?*
+
+* To add this feature to the website, a new function, `closeMenu()` was added to the "common.js" file. Given an event, the function first checks if the sub-menu is open and if so, whether an "Escape" key is pressed. If the key is pressed, the sub-menu is closed and the relevant ARIA property set to `false`. Finally, the focus is restored to the menu header using the command `event.target.focus()`.
+
+*Furthermore, the menu items are currently implemented using anchor texts, which for keyboard user are only activated by pressing the ENTER key. To improve the user experience, it would be ideal if the menu items can also be activated by pressing the SPACE key, which is the default for button types.*
+
+* To achieve this, the `spaceExpand()` function was added, which listens to key-down events when a drop down menu is in focus. In this case, the key is checked and if it is the space bar, the menu is either expanded or closed accordingly. The same logic applies to sub-menu items, such that they too can be accessed using the spacebar (which would redirect to that link) as well as the enter key.
+
+*When navigating outside an open menu with TAB, the now inactive menu should be closed as well. Can you also implement this feature by using JavaScript to listen to the TAB event and determine when a menu should be closed?*
+
+* To implement this functionality, a separate event listener function, `menuItemHandler()`, was created. The function listens to events on the `dropdown-menu` class, meaning that the `dropdown-item` classes become available. Since we listen to key-down events, we can check to see if the current `dropdown-item` is equal to the last item of the `dropdown-menu`, and if it is, we know that the menu is now inactive and can be closed accordingly.

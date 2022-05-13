@@ -1,12 +1,38 @@
 .news .media {
-    border-bottom: 1px solid #9e9e9e
+  border-bottom: 1px solid #9e9e9e;
 }
 
 .news .media img {
-    width: 5rem
+  width: 5rem;
 }
 
 .researches li,
 .studies li {
-    margin-top: 1.2rem
+  margin-top: 1.2rem;
+}
+
+/*
+
+body div {
+  color: black;
+}
+
+.media-body {
+  color: black !important;
+}
+
+a {
+  color: black;
+}
+p {
+  color: black;
+}
+*/
+
+.mt-4:hover {
+  background-color: orange;
+}
+
+a:hover {
+  background-color: orange;
 }

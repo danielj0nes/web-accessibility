@@ -85,6 +85,7 @@ function openMenu(event) {
         document.querySelectorAll('#nav-bar-content .dropdown .dropdown-menu');
     for (let j = 0; j < dropDownMenus.length; j++) {
         dropDownMenus[j].classList.remove('show');
+        dropDownMenus[j].parentNode.getElementsByClassName('nav-link')[0].setAttribute('aria-expanded', 'false');
     }
     // When submenu expanded or closed, update the ARIA attribute
     if (!isOpen) {

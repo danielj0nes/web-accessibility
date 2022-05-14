@@ -212,8 +212,8 @@
     <main class="container main" id="main" role="main">
       <div class="row no-gutters">
         <section class="col-12 col-md-5 mt-4 login" aria-label="Login">
-          <div class="p-4 mr-md-3 bg-white">
-            <div class="text-primary mb-4 title">Login</div>
+          <div class="p-4 mr-md-3 bg-salmon">
+            <h1 class="text-primary mb-4 title">Login</h1>
             <div class="text-danger mb-4 d-none subtitle" id="login-error">
               Please correct the error(s)
             </div>
@@ -276,17 +276,17 @@
           aria-label="Registration"
         >
           <div class="p-4 bg-white">
-            <div class="text-primary mb-4 title">Create new account</div>
+            <h1 class="text-primary mb-4 title">Create new account</h1>
             <div class="text-danger mb-4 d-none subtitle" id="register-error">
               Please correct the error(s)
             </div>
             <ul class="sr-only" id="register-error-list"></ul>
             <form id="register-form" novalidate>
               <section class="form-group" aria-label="basic information">
-                <p class="form-label" id="register-basic-legend">
+                <h2 class="form-label" id="register-basic-legend">
                   Basic information
                   <small class="text-secondary">(optional)</small>
-                </p>
+                </h2>
                 <div class="form-row">
                   <div class="form-group col-12 col-lg-6">
                     <p>First name</p>
@@ -358,11 +358,13 @@
                 </div>
               </section>
 
+              <hr class="sectionCutter" />
+
               <section class="form-group" aria-label="Additional information">
-                <p class="form-label" id="register-address-legend">
+                <h2 class="form-label" id="register-address-legend">
                   Additional information
                   <small class="text-secondary">(optional)</small>
-                </p>
+                </h2>
                 <div class="form-group">
                   <p>Street</p>
                   <input
@@ -413,33 +415,43 @@
 
     <footer class="container-fluid bg-dark mt-4 footer">
       <div class="container text-center py-3">
-        <div class="row justify-content-around">
-          <a
-            class="col-12 col-md mr-3 text-white"
-            href="./empty.html?title=About"
-            >About</a
-          >
-          <a
-            class="col-12 col-md mr-3 text-white"
-            href="./empty.html?title=Contact+us"
-            >Contact us</a
-          >
-          <a
-            class="col-12 col-md mr-3 text-white"
-            href="./empty.html?title=Help"
-            >Help</a
-          >
-          <a
-            class="col-12 col-md mr-3 text-white"
-            href="./empty.html?title=Terms+of+services"
-            >Terms of service</a
-          >
-          <a
-            class="col-12 col-md mr-3 text-white"
-            href="./empty.html?title=Privacy+policy"
-            >Privacy policy</a
-          >
-        </div>
+        <ul class="row justify-content-around">
+          <li>
+            <a
+              class="col-12 col-md mr-3 text-white"
+              href="./empty.html?title=About"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="col-12 col-md mr-3 text-white"
+              href="./empty.html?title=Contact+us"
+              >Contact us</a
+            >
+          </li>
+          <li>
+            <a
+              class="col-12 col-md mr-3 text-white"
+              href="./empty.html?title=Help"
+              >Help</a
+            >
+          </li>
+          <li>
+            <a
+              class="col-12 col-md mr-3 text-white"
+              href="./empty.html?title=Terms+of+services"
+              >Terms of service</a
+            >
+          </li>
+          <li>
+            <a
+              class="col-12 col-md mr-3 text-white"
+              href="./empty.html?title=Privacy+policy"
+              >Privacy policy</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
 

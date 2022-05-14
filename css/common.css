@@ -61,3 +61,6 @@ body a:hover {
 .mt-4 div:hover {
   color: orange;
 }
+a:hover {
+  background-color: orange;
+}

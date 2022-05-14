@@ -10,7 +10,7 @@
 ### Headings
 *Open the index.html file in your code editor, can you find any headings in the source code? Do you think it is good accessibility practice or not? Why?*
 
-* In the **index.html** file there are no headings, which is is not a good accessibility practice. Screen readers, such as JAWS, make assumptions about the pages based on conventional HTML usage. Therefore headings should be contained within the conventional tags (e.g., `<h1>Title heading</h1>`). When these conventions are broken, the tools will not be able to function as intended, resulting in the tools potentially failing or providing confusing misinformation to the user. Marking headings with the proper tags is especially important, since they reflect the underlying structure of websites and provide access to the essential functionality of an application. Additionally, people with cognitive disabilities benefit from a clear heading structure to help make their experience as accessible as possible.
+* In the **index.html** file there are no headings, which is not a good accessibility practice. Screen readers, such as JAWS, make assumptions about the pages based on conventional HTML usage. Therefore, headings should be contained within the conventional tags (e.g., `<h1>Title heading</h1>`). When these conventions are broken, the tools will not be able to function as intended, resulting in the tools potentially failing or providing confusing misinformation to the user. Marking headings with the proper tags is especially important since they reflect the underlying structure of websites and provide access to the essential functionality of an application. Additionally, people with cognitive disabilities benefit from a clear heading structure to help make their experience as accessible as possible.
 
 *If you view the same page in your browser, can you visually identify contents that are emphasised with enlarged font size or bolded font face?*
 
@@ -44,16 +44,16 @@
 
 *If not, try to fix the menu s.t. the screenreader will read "menu", "expanded/collapsed" correctly*
 
-* To fix the menu for the screenreader users, we can set the aria-expanded property to true/false on menu items when their sub-menus are expanded/collapsed. To achieve this, the `<a class="nav-link">` tags have been updated to contain `aria-expanded=false` property by default. The `openMenu()` function within the "common.js" module has been tweaked to set the property to `true` when expanded and `false` when collapsed again. Now when using JAWS, the screenreader correctly announces whether or not the menu is collapsed or expanded.
+* To fix the menu for the screenreader users, we can set the aria-expanded property to true/false on menu items when their sub-menus are expanded/collapsed. To achieve this, the `<a class="nav-link">` tags have been updated to contain `aria-expanded=false` property by default. The `openMenu()` function within the "common.js" module has been tweaked to set the property to `true` when expanded and `false` when collapsed again. Now when using JAWS, the screenreader correctly announces whether the menu is collapsed or expanded.
 
 ### Menu keyboard interaction
 *It is common practice for keyboard users to use the ESC key to cancel an operation. Therefore, it would be a user experience enhancement if an opened sub-menu gets closed automatically when the user presses the ESC key. After closing, the menu header should be focused. Can you implement this feature by using JavaScript to listen to keyboard events on sub-menu and closes it if it is open?*
 
-* To add this feature to the website, a new function, `closeMenu()` was added to the "common.js" file. Given an event, the function first checks if the sub-menu is open and if so, whether an "Escape" key is pressed. If the key is pressed, the sub-menu is closed and the relevant ARIA property set to `false`. Finally, the focus is restored to the menu header using the command `event.target.focus()`.
+* To add this feature to the website, a new function, `closeMenu()` was added to the "common.js" file. Given an event, the function first checks if the sub-menu is open and if so, whether an "Escape" key is pressed. If the key is pressed, the sub-menu is closed, and the relevant ARIA property set to `false`. Finally, the focus is restored to the menu header using the command `event.target.focus()`.
 
 *Furthermore, the menu items are currently implemented using anchor texts, which for keyboard user are only activated by pressing the ENTER key. To improve the user experience, it would be ideal if the menu items can also be activated by pressing the SPACE key, which is the default for button types.*
 
-* To achieve this, the `spaceExpand()` function was added, which listens to key-down events when a drop down menu is in focus. In this case, the key is checked and if it is the space bar, the menu is either expanded or closed accordingly. The same logic applies to sub-menu items, such that they too can be accessed using the spacebar (which would redirect to that link) as well as the enter key.
+* To achieve this, the `spaceExpand()` function was added, which listens to key-down events when a drop-down menu is in focus. In this case, the key is checked and if it is the space bar, the menu is either expanded or closed accordingly. The same logic applies to sub-menu items, such that they too can be accessed using the spacebar (which would redirect to that link) as well as the enter key.
 
 *When navigating outside an open menu with TAB, the now inactive menu should be closed as well. Can you also implement this feature by using JavaScript to listen to the TAB event and determine when a menu should be closed?*
 
@@ -64,3 +64,14 @@
 *Skip links provides shortcuts for screen reader users to jump to a section of the page quickly. Can you implement this feature?*
 
 * The skip links that have been implemented include all of the `<h1>` tags (i.e., news and events, studies, and research) with the addition of the "login" and "footer" elements. To achieve this, a `<div>` tag with the CSS property `visibility: hidden` was added to the HTML just before the `<body>` tag. The skip links all point to the IDs of the relevant HTML areas, such that screen reader users will first have access to these links upon scanning the page.
+
+## Exercise 6 - Accessible tables
+
+### Header cells vs data cells
+*Open the article page in your browser and scroll down to the table containing samples of average global temperature for the last two centuries. Can you identify which rows (columns) belong to the table header and which rows (columns) belong to the table data?*
+
+* The "Century", "Year", "Temperature", "Average", and "Smoothed" values should be marked as table headers whilst the rest as table data. 
+
+*If you inspect the HTML code of article.html in your code editor, are the header cells and data cells marked up correctly? If not, how can you fix it?*
+
+* The header cells are not marked up correctly, to fix this the `<td>` tags were replaced with `<th>` for each identified table header value.

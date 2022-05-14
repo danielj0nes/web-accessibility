@@ -68,7 +68,7 @@
 ### Header cells vs data cells
 *Open the article page in your browser and scroll down to the table containing samples of average global temperature for the last two centuries. Can you identify which rows (columns) belong to the table header and which rows (columns) belong to the table data?*
 
-* The "Century", "Year", "Temperature", "Average", and "Smoothed" values should be marked as table headers whilst the rest as table data. 
+* The "Century", "Year", "Temperature", "Average", and "Smoothed" values should be marked as table headers for the respective **columns**, the "19th Century", "20th Century", and "21st Century" should be marked as table headers for the respective **rows**. The rest of the values are correctly marked as data.
 
 *If you inspect the HTML code of article.html in your code editor, are the header cells and data cells marked up correctly? If not, how can you fix it?*
 
@@ -77,4 +77,4 @@
 ### Column and row groups
 *In the table about average global temperature, there are some headers that span multiple rows (columns) but the corresponding scopes are not correctly established. Based on the slides containing column and row groups, can you change the HTML code?*
 
-* Yes
+* The headers that span multiple rows (i.e., "Temperature", "19th Century", "20th Century", and "21st Century") have been assigned to the appropriate scope e.g., `<th scope="colgroup" class="align-middle" colspan="2">Temperature</th>` and `<th scope="rowgroup" class="align-middle" rowspan="2">19th century</th>`.

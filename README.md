@@ -60,13 +60,11 @@
 * To implement this functionality, a separate event listener function, `menuItemHandler()`, was created. The function listens to events on the `dropdown-menu` class, meaning that the `dropdown-item` classes become available. Since we listen to key-down events, we can check to see if the current `dropdown-item` is equal to the last item of the `dropdown-menu`, and if it is, we know that the menu is now inactive and can be closed accordingly.
 
 ### Skip links
-
-*Skip links provides shortcuts for screen reader users to jump to a section of the page quickly. Can you implement this feature?*
+*Skip links provide shortcuts for screen reader users to jump to a section of the page quickly. Can you implement this feature?*
 
 * The skip links that have been implemented include all of the `<h1>` tags (i.e., news and events, studies, and research) with the addition of the "login" and "footer" elements. To achieve this, a `<div>` tag with the CSS property `visibility: hidden` was added to the HTML just before the `<body>` tag. The skip links all point to the IDs of the relevant HTML areas, such that screen reader users will first have access to these links upon scanning the page.
 
 ## Exercise 6 - Accessible tables
-
 ### Header cells vs data cells
 *Open the article page in your browser and scroll down to the table containing samples of average global temperature for the last two centuries. Can you identify which rows (columns) belong to the table header and which rows (columns) belong to the table data?*
 
@@ -75,3 +73,8 @@
 *If you inspect the HTML code of article.html in your code editor, are the header cells and data cells marked up correctly? If not, how can you fix it?*
 
 * The header cells are not marked up correctly, to fix this the `<td>` tags were replaced with `<th>` for each identified table header value.
+
+### Column and row groups
+*In the table about average global temperature, there are some headers that span multiple rows (columns) but the corresponding scopes are not correctly established. Based on the slides containing column and row groups, can you change the HTML code?*
+
+* Yes

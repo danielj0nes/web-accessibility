@@ -5833,7 +5833,11 @@ button.bg-danger:focus,
 button.bg-danger:hover {
   background-color: #bd2130 !important;
 }
-
+/*
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+*/
 .bg-light {
   background-color: #f8f9fa !important;
 }

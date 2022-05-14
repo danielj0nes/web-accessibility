@@ -18,9 +18,14 @@ body a:hover {
   color: #cdcdcd;
 }*/
 
+/*
 .title {
   font-size: 2rem;
   font-weight: 100;
+}
+*/
+.title {
+  font-size: 2rem;
 }
 
 .subtitle {

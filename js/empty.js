@@ -4,21 +4,32 @@
  * @return {string} The value of the query paramter
  */
 function getUrlParameter(name) {
-    name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    if (results == null) {
-        return null;
-    } else {
-        return decodeURIComponent(results[1].replace(/\+/g, ' '));
-    }
+  name = name.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+  var results = regex.exec(location.search);
+  if (results == null) {
+    return null;
+  } else {
+    return decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var title = getUrlParameter('title');
-    document.getElementById('title-placeholder').innerHTML
-        = title == null ? 'Not found': title;
-    document.getElementById('text-placeholder').innerHTML
-        = title == null ? '' : 'This page is currently under construction.';
-}, false);
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+    var title = getUrlParameter("title");
+    document.getElementById("title-placeholder").innerHTML =
+      title == null ? "Not found" : title;
+    document.getElementById("text-placeholder").innerHTML =
+      title == null ? "" : "This page is currently under construction.";
+  },
+  false
+);
 
+let currentFontsize = 1;
+
+function changeFontSize(how) {
+  let area = document.getElementsByTagName("html")[0];
+  currentFontsize = currentFontsize + how;
+  area.style.fontSize = currentFontsize + "rem";
+}

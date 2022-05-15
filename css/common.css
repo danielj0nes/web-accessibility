@@ -1,57 +1,78 @@
 html {
-    font-size: 1rem
+  font-size: 1rem;
 }
 
 body,
 html {
-    height: 100%
+  height: 100%;
 }
 
 body a,
 body div,
 body p {
-    color: #dfdfdf
+  color: black;
 }
 
+.sectionCutter {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 2px solid orange;
+}
+/*
 body a:hover {
-    color: #cdcdcd
-}
+  color: #cdcdcd;
+}*/
 
+/*
 .title {
-    font-size: 2rem;
-    font-weight: 100
+  font-size: 2rem;
+  font-weight: 100;
+}
+*/
+.title {
+  font-size: 2rem;
 }
 
 .subtitle {
-    font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 .header .logo {
-    height: 3.5rem;
-    width: 3.5rem
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .header .title {
-    font-size: 1.5rem;
-    line-height: 1.8rem
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .header .font-increase-button,
 .nav .font-increase-button {
-    font-size: .8rem
+  font-size: 0.8rem;
 }
 
 .header .font-decrease-button,
 .nav .font-decrease-button {
-    font-size: .6rem
+  font-size: 0.6rem;
 }
 
 .footer,
 .header,
 .nav {
-    flex: 0 0 auto
+  flex: 0 0 auto;
 }
 
 .main {
-    flex: 1 0 auto
+  flex: 1 0 auto;
+}
+
+/* added */
+/*
+.mt-4 div:hover {
+  color: orange;
+}
+*/
+a:hover {
+  background-color: orange;
 }

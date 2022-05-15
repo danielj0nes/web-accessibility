@@ -102,7 +102,6 @@ function changeFontSize(how) {
   currentFontsize = currentFontsize + how;
   area.style.fontSize = currentFontsize + "rem";
 }
-
 /**
  * Toggle the navigation content
  * @param {object} event - The DOM event
@@ -117,6 +116,7 @@ function toggleNavigation(event) {
         content.classList.add('collapse');
     }
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     let dropDownMenus = 
         document.querySelectorAll('.dropdown-menu');
@@ -133,9 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
             dropDownToggles[i].addEventListener('keyup', closeMenu);
             dropDownToggles[i].addEventListener('keydown', spaceExpand);
         }
-    document
-      .querySelector(".navbar-toggler")
-      .addEventListener("click", toggleNavigation, false);
-  },
-  false
-);
+
+    document.querySelector('.navbar-toggler')
+        .addEventListener('click', toggleNavigation, false);
+}, false);

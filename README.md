@@ -55,4 +55,5 @@ use? What are the pros and cons?_
   description through the longdesc attribute in the image element, pointing to,
   for example, the ID of the caption. However, there are existing bugs of JAWS
   not reading long descriptions in Chrome despite recognizing them, so we opted
-  for the former method.
+  for the former method, as the article is organized such that the description
+  is just below the image anyway.

@@ -6,11 +6,21 @@
 - Nina Mari Willis
 - Seonbin Kim
 
-## Useful
+## Group resources
 - Presentation -
   https://docs.google.com/presentation/d/1bbwTiRF9DIqWM-4Mwa6qLZTDfMDS82r0GhEHm_r-xbE/
 - Report -
   https://docs.google.com/document/d/1bnuHls_YR6iUf8Inoce_JH-aKjetBMHblrzR9i9Lt4I/edit
+
+## Exercise 1 - Explore the sample website
+### Section goes here
+*Question goes here*
+* Answer goes here
+
+## Exercise 2 - Accessible design
+### Section goes here
+*Question goes here*
+* Answer goes here
 
 ## Exercise 3 - Accessible navigation
 ### Headings
@@ -188,3 +198,8 @@ use? What are the pros and cons?_
 *In the table about average global temperature, there are some headers that span multiple rows (columns) but the corresponding scopes are not correctly established. Based on the slides containing column and row groups, can you change the HTML code?*
 
 * The headers that span multiple rows (i.e., "Temperature", "19th Century", "20th Century", and "21st Century") have been assigned to the appropriate scope e.g., `<th scope="colgroup" class="align-middle" colspan="2">Temperature</th>` and `<th scope="rowgroup" class="align-middle" rowspan="2">19th century</th>`.
+
+## Exercise 7 - Accessibility test
+### Section goes here
+*Question goes here*
+* Answer goes here

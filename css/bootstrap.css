@@ -8292,7 +8292,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-  color: gray !important;
+  color: black !important;
 }
 
 a.text-primary:focus,
@@ -8319,7 +8319,7 @@ a.text-success:hover {
 }
 
 .text-info {
-  color: #4b8a7d !important;
+  color: #3617ef !important;
 }
 
 a.text-info:focus,

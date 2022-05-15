@@ -40,3 +40,4 @@ function changeFontSize(how) {
   currentFontsize = currentFontsize + how;
   area.style.fontSize = currentFontsize + "rem";
 }
+

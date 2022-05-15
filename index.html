@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" id="root">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Lorem Ipsum Institute of Technolgoy</title>
-    <link href="./css/bootstrap.css" rel="stylesheet" />
-    <link href="./css/common.css" rel="stylesheet" />
-    <link href="./css/index.css" rel="stylesheet" />
-  </head>
-
-  <body class="d-flex flex-column bg-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lorem Ipsum Institute of Technology</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column bg-light">
+    <div aria-label="Skip links" style="visibility: hidden" id="skip-links">
+        <a href="#login">Skip to Login</a> 
+        <a href="#news-events">Skip to News and Events</a>
+        <a href="#studies">Skip to Studies</a>
+        <a href="#research">Skip to Research</a>
+        <a href="#footer">Skip to Footer</a>
+    </div>
     <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
-      <div class="container">
-        <div class="row no-gutters">
-          <!--<a href="index.html">-->
-          <div class="col-8 media">
-            <img
-              class="align-self-center mr-3 rounded-right logo"
-              src="./img/logo.jpg"
-            />
-            <div class="media-body align-self-center">
-              <div class="mb-0 title">
-                Lorem Ipsum <br />Institute of Technology
-              </div>
-            </div>
-          </div>
-          <!--</a>-->
-          <div class="col-4">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-8 media">
+                    <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Website Logo">
+                    <div class="media-body align-self-center">
+                        <div class="mb-0 title">Lorem Ipsum
+                            <br>Institute of Technology
+                        </div>
+                    </div>
+                </div>
+              <div class="col-4">
             <div class="btn-toolbar justify-content-end">
               <div class="btn-group btn-group-sm">
                 <!--<button
@@ -63,10 +61,12 @@
               </div>
             </div>
           </div>
+            </div>
+          <!--</a>-->
+          </div>
         </div>
       </div>
     </header>
-
     <nav class="container-fluid bg-dark nav" role="navigation">
       <div class="container">
         <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
@@ -76,6 +76,7 @@
               src="./img/logo.jpg"
               width="40"
               height="40"
+              alt="Website logo"
             />
           </div>
           <button class="navbar-toggler" type="button">
@@ -206,27 +207,8 @@
             </div>
           </div>
         </div>
-        <div class="d-lg-none">
-          <div class="btn-toolbar justify-content-end">
-            <div class="btn-group btn-group-sm">
-              <button
-                class="btn btn-dark text-white font-increase-button"
-                id="font-increase-button-1"
-              >
-                A+
-              </button>
-              <button
-                class="btn btn-dark text-white font-decrease-button"
-                id="font-decrease-button-1"
-              >
-                A-
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </nav>
-
     <main class="container main" id="main" role="main">
       <div class="row no-gutters">
         <section class="col-12 col-lg-6" aria-label="News&Events">
@@ -239,7 +221,7 @@
                 <li>
             <a href="./article.html">
               <div class="media mt-4">
-                <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" />
+                <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" alt="Iceberg"/>
                 <div class="media-body">
                   <h2 class="text-info mt-0 mb-2 subtitle">
                     Global temperature record
@@ -260,7 +242,7 @@
             <li>
             <a href="./empty.html?title=Article">
               <div class="media mt-4">
-                <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" />
+                <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" alt="Universe" />
                 <div class="media-body">
                   <h2 class="text-info mt-0 mb-2 subtitle">
                     At iam decimum annum in spelunca iacet
@@ -281,7 +263,7 @@
             <li>
             <a href="./empty.html?title=Article">
               <div class="media mt-4">
-                <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" />
+                <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" alt="Robots" />
                 <div class="media-body">
                   <h2 class="text-info mt-0 mb-2 subtitle">
                     Quo plebiscito decreta a senatu est consuli quaestio Cn
@@ -302,7 +284,6 @@
         </li>
             </ul>
         </section>
-
         <section class="col-12 col-lg-6" aria-label="Studies&Researches">
           <section class="p-4 mt-4 bg-white studies" aria-label="Studies">
             <h1 class="text-primary mb-4 title">Studies</h1>
@@ -369,7 +350,6 @@
         </section>
       </div>
     </main>
-
     <footer class="container-fluid bg-dark mt-4 footer">
       <div class="container text-center py-3">
         <ul class="row justify-content-around">

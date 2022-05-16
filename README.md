@@ -266,16 +266,18 @@ _In the table about average global temperature, there are some headers that span
 
 _Use the WAVE accessibility tool to evaluate the accessibility features of the improved Website. Comparing your finding carefully against the evaluation result, have you overlooked some issues? Or have you found something that is not reported by the plugin?_
 
-- There were contrast errors due to less contrast of the title fonts of the articles. We solved the problem by changing the font color to Blue.
+- There were contrast errors due to the lower contrast of the title fonts in the articles. We solved the problem by changing the font colour to blue, as it creates a much higher contrast whilst not looking out place.
+
+- We made the header and footer fixed to the page as these would disappear on certain screen-sizes, this unfortunately was not reported by the plugin. This subsequently involved editing the CSS of various other elements, such as the articles on the index page, to facilitate this change.
 
 ### CSS disabled
 
 _try to reload the page with CSS disabled. Is the page layout behaving the same as you expected?_
 
-- Yes. Heading levels were used correctly and lists were used for making the html more structured.
+- Ultimately yes. Heading levels were utilised correctly and lists were used to make the html more structured, so the page behaves roughly in the same way when using a screenreader (except of course for the elements that heavily relied on the CSS, such as the accessible menu bar).
 
 ### Screen reader
 
 _try to use a screen reader (JAWS or VoiceOver) to access the Website. Do you encounter any difficulty? Take some time to summarize your findings, if there is still space for improvement, go back and make further changes_
 
-- ???
+- There were a few adjustments that had to be made to ensure the screenreader could overcome any possible difficulties. The HTML hierarchy required restructuring in some of the elements, such as the articles, such that the screenreader would first announce "Article" and ignore the link name. Additional ARIA tags, such as "aria-haspopup='true'", were added to the appropriate tags (e.g., `<a>` tags).

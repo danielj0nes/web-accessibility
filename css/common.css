@@ -63,8 +63,17 @@ h3, .subtitle {
   flex: 0 0 auto;
 }
 
+#main-header {
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background-color: #ffffff;
+}
+
 .main {
   flex: 1 0 auto;
+  padding-top: 150px;
 }
 
 /* added */
@@ -75,4 +84,9 @@ h3, .subtitle {
 */
 a:hover {
   background-color: orange;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
 }

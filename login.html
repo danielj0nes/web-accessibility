@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" id="root">
+
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lorem Ipsum Institute of Technology</title>
     <link href="./css/bootstrap.css" rel="stylesheet" />
@@ -14,182 +12,109 @@
   </head>
 
   <body class="d-flex flex-column bg-light">
-    <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-8 media">
-            <img
-              class="align-self-center mr-3 rounded-right logo"
-              src="./img/logo.jpg"
-              alt="Website Logo"
-            />
-            <div class="media-body align-self-center">
-              <div class="mb-0 title">
-                Lorem Ipsum <br />Institute of Technology
+    <div id="main-header">
+      <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-8 media">
+              <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Website Logo">
+              <div class="media-body align-self-center">
+                <div class="mb-0 title">Lorem Ipsum
+                  <br>Institute of Technology
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="btn-toolbar justify-content-end">
-              <div class="btn-group btn-group-sm">
-                <button
-                  onclick="changeFontSize(0.1)"
-                  class="btn btn-dark font-increase-button"
-                  id="font-increase-button"
-                >
-                  A+
-                </button>
-                <button
-                  onclick="changeFontSize(-0.1)"
-                  class="btn btn-dark font-decrease-button"
-                  id="font-decrease-button"
-                >
-                  A-
-                </button>
+            <div class="col-4">
+              <div class="btn-toolbar justify-content-end">
+                <div class="btn-group btn-group-sm">
+                  <button onclick="changeFontSize(0.1)" class="btn btn-dark font-increase-button" id="font-increase-button">
+                    A+
+                  </button>
+                  <button onclick="changeFontSize(-0.1)" class="btn btn-dark font-decrease-button" id="font-decrease-button">
+                    A-
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-
-    <nav class="container-fluid bg-dark nav" role="navigation">
-      <div class="container">
-        <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
-          <div class="navbar-brand d-lg-none">
-            <img
-              class="rounded-right"
-              src="./img/logo.jpg"
-              width="40"
-              height="40"
-              alt="Website logo"
-            />
-          </div>
-          <div class="collapse navbar-collapse" id="nav-bar-content">
-            <div class="navbar-nav mr-auto">
-              <div class="nav-item">
-                <a class="nav-link" href="index.html">Homepage</a>
-              </div>
-              <div class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="nav-bar-faculties"
-                >
-                  Faculties
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Applied+sciences"
-                      >Applied sciences</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Architecture+%26+planning"
-                      >Architecture &amp; planning</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Construction+%26+environment"
-                      >Construction &amp; environment</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Engineering"
-                      >Engineering</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Health+%26+social+sciences"
-                      >Health &amp; social sciences</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="nav-bar-education"
-                  >Education &amp; research</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Bachelor"
-                      >Bachelor</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Master"
-                      >Master</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Continuing+education"
-                      >Continuing education</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./empty.html?title=Doctorate"
-                      >Doctorate</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="nav-bar-industry"
-                  >Industry &amp; partners</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Public+relations"
-                      >Public relations</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Commercialization"
-                      >Commercialization</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./empty.html?title=Sponsors+%26+partners"
-                      >Sponsors &amp; partners</a
-                    >
-                  </li>
-                </ul>
-              </div>
+      </header>
+      <nav class="container-fluid bg-dark nav" role="navigation">
+        <div class="container">
+          <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
+            <div class="navbar-brand d-lg-none">
+              <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Website logo" />
             </div>
-            <div class="navbar-nav">
-              <div class="nav-item">
-                <a class="nav-link" href="./login.html">Login</a>
+            <div class="collapse navbar-collapse" id="nav-bar-content">
+              <div class="navbar-nav mr-auto">
+                <div class="nav-item">
+                  <a class="nav-link" href="index.html">Homepage</a>
+                </div>
+                <div class="nav-item dropdown">
+
+                  <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties" aria-expanded="false" aria-haspopup="true">
+                    Faculties
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education" aria-expanded="false" aria-haspopup="true">Education &amp; research</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry" aria-expanded="false" aria-haspopup="true">Industry &amp; partners</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-nav">
+                <div class="nav-item">
+                  <a class="nav-link" href="./login.html">Login</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
     <main class="container main" id="main" role="main">
       <div class="row no-gutters">
         <div class="col-12 col-md-5 mt-4 login">
@@ -197,67 +122,31 @@
             <div class="text-primary mb-4 title">
               <h1>Login</h1>
             </div>
-            <div
-              class="text-danger mb-4 d-none subtitle"
-              id="login-error"
-              role="alert"
-              aria-atomic="true"
-            >
+            <div class="text-danger mb-4 d-none subtitle" id="login-error" role="alert" aria-atomic="true">
               Please correct the error(s)
             </div>
             <ul class="sr-only" id="login-error-list"></ul>
             <form id="login-form">
               <div class="form-group">
                 <label for="login-email-control">Email</label>
-                <input
-                  class="form-control"
-                  id="login-email-control"
-                  type="email"
-                  placeholder="Email"
-                  required
-                />
-                <small class="invalid-feedback" role="alert" aria-atomic="true"
-                  >Email invalid</small
-                >
+                <input class="form-control" id="login-email-control" type="email" placeholder="Email" required />
+                <small class="invalid-feedback" role="alert" aria-atomic="true">Email invalid</small>
               </div>
               <div class="form-group">
                 <label for="login-password-control">Password</label>
-                <input
-                  class="form-control"
-                  id="login-password-control"
-                  type="password"
-                  placeholder="Password"
-                  required
-                />
-                <small class="invalid-feedback" role="alert" aria-atomic="true"
-                  >Password invalid</small
-                >
+                <input class="form-control" id="login-password-control" type="password" placeholder="Password" required />
+                <small class="invalid-feedback" role="alert" aria-atomic="true">Password invalid</small>
               </div>
               <div class="form-group">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value="remember"
-                    id="login-remember-control"
-                  />
-                  <label class="form-check-label" for="login-remember-control"
-                    >Keep me logged in</label
-                  >
+                  <input class="form-check-input" type="checkbox" value="remember" id="login-remember-control" />
+                  <label class="form-check-label" for="login-remember-control">Keep me logged in</label>
                 </div>
               </div>
-              <button
-                class="btn btn-primary"
-                id="login-login-button"
-                type="submit"
-              >
+              <button class="btn btn-primary" id="login-login-button" type="submit">
                 Login
               </button>
-              <button
-                class="btn btn-link ml-3"
-                id="login-forgot-button"
-                type="button"
-              >
+              <button class="btn btn-link ml-3" id="login-forgot-button" type="button">
                 Forgot password
               </button>
             </form>
@@ -269,12 +158,7 @@
             <div class="text-primary mb-4 title">
               <h1>Create new account</h1>
             </div>
-            <div
-              class="text-danger mb-4 d-none subtitle"
-              id="register-error"
-              role="alert"
-              aria-atomic="true"
-            >
+            <div class="text-danger mb-4 d-none subtitle" id="register-error" role="alert" aria-atomic="true">
               Please correct the error(s)
             </div>
             <ul class="sr-only" id="register-error-list"></ul>
@@ -286,92 +170,33 @@
                 </legend>
                 <div class="form-row">
                   <div class="form-group col-12 col-lg-6">
-                    <label for="register-first-name-control"
-                      >First name (required)
+                    <label for="register-first-name-control">First name (required)
                     </label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      id="register-first-name-control"
-                      placeholder="First name"
-                      required
-                    />
-                    <small
-                      class="invalid-feedback"
-                      role="alert"
-                      aria-atomic="true"
-                      >First name invalid</small
-                    >
+                    <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required />
+                    <small class="invalid-feedback" role="alert" aria-atomic="true">First name invalid</small>
                   </div>
                   <div class="form-group col-12 col-lg-6">
-                    <label for="register-last-name-control"
-                      >Last name (required)</label
-                    >
-                    <input
-                      class="form-control"
-                      type="text"
-                      id="register-last-name-control"
-                      placeholder="Last name"
-                      required
-                    />
-                    <small
-                      class="invalid-feedback"
-                      role="alert"
-                      aria-atomic="true"
-                      >Last name invalid</small
-                    >
+                    <label for="register-last-name-control">Last name (required)</label>
+                    <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required />
+                    <small class="invalid-feedback" role="alert" aria-atomic="true">Last name invalid</small>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="register-email-control">Email (required)</label>
-                  <input
-                    class="form-control"
-                    id="register-email-control"
-                    type="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <small
-                    class="invalid-feedback"
-                    role="alert"
-                    aria-atomic="true"
-                    >Email invalid</small
-                  >
+                  <input class="form-control" id="register-email-control" type="email" placeholder="Email" required />
+                  <small class="invalid-feedback" role="alert" aria-atomic="true">Email invalid</small>
                 </div>
                 <div class="form-group">
-                  <label for="register-password-control"
-                    >Password (required)</label
-                  >
-                  <small
-                    id="register-password-help"
-                    class="form-text text-muted"
-                    >Your password must be 8-16 characters long and contain both
-                    letters and numbers.</small
-                  >
-                  <input
-                    class="form-control"
-                    id="register-password-control"
-                    type="password"
-                    placeholder="Password"
-                    required
-                  />
-                  <small
-                    class="invalid-feedback"
-                    role="alert"
-                    aria-atomic="true"
-                    >Password invalid</small
-                  >
+                  <label for="register-password-control">Password (required)</label>
+                  <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both
+                    letters and numbers.</small>
+                  <input class="form-control" id="register-password-control" type="password" placeholder="Password" required />
+                  <small class="invalid-feedback" role="alert" aria-atomic="true">Password invalid</small>
                   <!---->
                 </div>
                 <div class="form-group">
-                  <label for="register-programme-control"
-                    >Programme (required)</label
-                  >
-                  <select
-                    class="form-control"
-                    id="register-programme-control"
-                    required
-                  >
+                  <label for="register-programme-control">Programme (required)</label>
+                  <select class="form-control" id="register-programme-control" required>
                     <option value="">
                       Please select your education or research programme
                     </option>
@@ -380,12 +205,7 @@
                     <option value="continuing">Continuing education</option>
                     <option value="doctorate">Doctorate</option>
                   </select>
-                  <small
-                    class="invalid-feedback"
-                    role="alert"
-                    aria-atomic="true"
-                    >Programme invalid</small
-                  >
+                  <small class="invalid-feedback" role="alert" aria-atomic="true">Programme invalid</small>
                 </div>
               </fieldset>
               <hr class="sectionCutter" />
@@ -396,40 +216,20 @@
                 </legend>
                 <div class="form-group">
                   <label for="register-street-control">Street (optional)</label>
-                  <input
-                    class="form-control"
-                    id="register-street-control"
-                    type="text"
-                    placeholder="Street"
-                  />
+                  <input class="form-control" id="register-street-control" type="text" placeholder="Street" />
                 </div>
                 <div class="form-row">
                   <div class="form-group col-12 col-lg-5">
                     <label for="register-city-control">City (optional)</label>
-                    <input
-                      class="form-control"
-                      id="register-city-control"
-                      type="text"
-                      placeholder="City"
-                    />
+                    <input class="form-control" id="register-city-control" type="text" placeholder="City" />
                   </div>
                   <div class="form-group col-12 col-lg-4">
                     <label for="register-state-control">State (optional)</label>
-                    <input
-                      class="form-control"
-                      id="register-state-control"
-                      type="text"
-                      placeholder="State"
-                    />
+                    <input class="form-control" id="register-state-control" type="text" placeholder="State" />
                   </div>
                   <div class="form-group col-12 col-lg-3">
                     <label for="register-zip-control">Zip (optional)</label>
-                    <input
-                      class="form-control"
-                      id="register-zip-control"
-                      type="text"
-                      placeholder="Zip"
-                    />
+                    <input class="form-control" id="register-zip-control" type="text" placeholder="Zip" />
                   </div>
                 </div>
               </fieldset>
@@ -445,39 +245,19 @@
       <div class="container text-center py-3">
         <ul class="row justify-content-around">
           <li>
-            <a
-              class="col-12 col-md mr-3 text-white"
-              href="./empty.html?title=About"
-              >About</a
-            >
+            <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
           </li>
           <li>
-            <a
-              class="col-12 col-md mr-3 text-white"
-              href="./empty.html?title=Contact+us"
-              >Contact us</a
-            >
+            <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us">Contact us</a>
           </li>
           <li>
-            <a
-              class="col-12 col-md mr-3 text-white"
-              href="./empty.html?title=Help"
-              >Help</a
-            >
+            <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help">Help</a>
           </li>
           <li>
-            <a
-              class="col-12 col-md mr-3 text-white"
-              href="./empty.html?title=Terms+of+services"
-              >Terms of service</a
-            >
+            <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services">Terms of service</a>
           </li>
           <li>
-            <a
-              class="col-12 col-md mr-3 text-white"
-              href="./empty.html?title=Privacy+policy"
-              >Privacy policy</a
-            >
+            <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy">Privacy policy</a>
           </li>
         </ul>
       </div>
@@ -488,4 +268,5 @@
     <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
   </body>
+
 </html>

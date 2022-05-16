@@ -286,7 +286,9 @@
                 </legend>
                 <div class="form-row">
                   <div class="form-group col-12 col-lg-6">
-                    <label for="register-first-name-control">First name</label>
+                    <label for="register-first-name-control"
+                      >First name (required)
+                    </label>
                     <input
                       class="form-control"
                       type="text"
@@ -302,7 +304,9 @@
                     >
                   </div>
                   <div class="form-group col-12 col-lg-6">
-                    <label for="register-last-name-control">Last name</label>
+                    <label for="register-last-name-control"
+                      >Last name (required)</label
+                    >
                     <input
                       class="form-control"
                       type="text"
@@ -319,7 +323,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="register-email-control">Email</label>
+                  <label for="register-email-control">Email (required)</label>
                   <input
                     class="form-control"
                     id="register-email-control"
@@ -335,7 +339,15 @@
                   >
                 </div>
                 <div class="form-group">
-                  <label for="register-password-control">Password</label>
+                  <label for="register-password-control"
+                    >Password (required)</label
+                  >
+                  <small
+                    id="register-password-help"
+                    class="form-text text-muted"
+                    >Your password must be 8-16 characters long and contain both
+                    letters and numbers.</small
+                  >
                   <input
                     class="form-control"
                     id="register-password-control"
@@ -349,15 +361,12 @@
                     aria-atomic="true"
                     >Password invalid</small
                   >
-                  <small
-                    id="register-password-help"
-                    class="form-text text-muted"
-                    >Your password must be 8-16 characters long and contain both
-                    letters and numbers.</small
-                  >
+                  <!---->
                 </div>
                 <div class="form-group">
-                  <label for="register-programme-control">Programme</label>
+                  <label for="register-programme-control"
+                    >Programme (required)</label
+                  >
                   <select
                     class="form-control"
                     id="register-programme-control"
@@ -386,7 +395,7 @@
                   <small class="text-secondary">(optional)</small>
                 </legend>
                 <div class="form-group">
-                  <label for="register-street-control">Street</label>
+                  <label for="register-street-control">Street (optional)</label>
                   <input
                     class="form-control"
                     id="register-street-control"
@@ -396,7 +405,7 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-12 col-lg-5">
-                    <label for="register-city-control">City</label>
+                    <label for="register-city-control">City (optional)</label>
                     <input
                       class="form-control"
                       id="register-city-control"
@@ -405,7 +414,7 @@
                     />
                   </div>
                   <div class="form-group col-12 col-lg-4">
-                    <label for="register-state-control">State</label>
+                    <label for="register-state-control">State (optional)</label>
                     <input
                       class="form-control"
                       id="register-state-control"
@@ -414,7 +423,7 @@
                     />
                   </div>
                   <div class="form-group col-12 col-lg-3">
-                    <label for="register-zip-control">Zip</label>
+                    <label for="register-zip-control">Zip (optional)</label>
                     <input
                       class="form-control"
                       id="register-zip-control"

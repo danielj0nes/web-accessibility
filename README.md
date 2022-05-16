@@ -22,14 +22,14 @@ _Try to find features that do not work as expected._
 
 _Try to find features that are implemented but not very accessible._
 
-- Gray fonts on white background make the website not accessible for people with limited sight. The color of these texts should be changed to have more contrast with the background. Furthermore, the name of the homepage in the header and some headlines are in very thin fonts, which make people hard to see what they are about.
+- Gray fonts on white background make the website not accessible for people with limited sight. The colour of these texts should be changed to have more contrast with the background. Furthermore, the name of the homepage in the header and some headlines are in very thin fonts, which make people hard to see what they are about.
   Login and Registration page also shows low contrast between the boxes and the white background, etc.
 
 _Discuss with your colleagues about your findings and try to propose some solutions or improvements_
 
 - Implement the Fontsize change btn
-- Change Basic font color into Black for higher contrast with the white background
-- Use a highlight color for hover and important buttons
+- Change Basic font colour into Black for higher contrast with the white background
+- Use a highlight colour for hover and important buttons
 
 ### Turn off CSS
 
@@ -44,22 +44,22 @@ _Now turn of the CSS feature from the browser. Navigate to different pages and t
 _Can you change the contrast ratio of the content so that they become more legible?_
 
 - We changed the light gray fonts into black, which increased the contrast ratio between the white background.
-- We also used orange color for highlighting & hover, which also shows high contrast with black color.
+- We also used orange colour for highlighting & hover, which also shows high contrast with black colour.
 - We used hover many times to enable people with less visibility to see where they're with the mouse.
 - To make clicking easier for these people, we also made hyperlink to the whole div in News&Events and made it to be orange when there's mouseover.
 - We made the gaps between the navigation bar bigger to make people see the different elements easier.
 
 ### Page Regions
 
-_For the homepage, the HTML code is inside the index.html file. After opening it in your favorite code editor, try to identify different regions in this page and use appropriate landmarks to mark them. How many regions, e.g. header, navigation, etc. are there in the Web page_
+_For the homepage, the HTML code is inside the index.html file. After opening it in your favourite code editor, try to identify different regions in this page and use appropriate landmarks to mark them. How many regions, e.g. header, navigation, etc. are there in the Web page_
 
-- There are regions in the given html files but they're not explicitely maked by HTML5 semantic tags. We added 'header', 'navigation','main', 'footer' tags to mark these regions correctly for each html file.
+- There are regions in the given html files but they're not explicitly marked by HTML5 semantic tags. We added 'header', 'navigation', 'main', and 'footer' tags to mark these regions correctly for each html file.
 
 ### Accessible font size
 
 _Have you already tested the two buttons on the top of the of Web page where you can increase or decrease the font sizes of the whole page? Does it work as expected? If not, can you implement the JavaScript that will dynamically scale all the font sizes?_
 
-- Yes, we implemented the fontchange function for the buttons.
+- Initially this did not work as expected, so we implemented the `changeFontSize()` function for both buttons to scale the text either up or down.
 
 ### Reading order
 
@@ -270,6 +270,8 @@ _Use the WAVE accessibility tool to evaluate the accessibility features of the i
 
 - We made the header and footer fixed to the page as these would disappear on certain screen-sizes, this unfortunately was not reported by the plugin. This subsequently involved editing the CSS of various other elements, such as the articles on the index page, to facilitate this change.
 
+- We improved the toggle menu button so that, on devices with smaller resolutions, the menu could be disabled or enabled at will with proper aria markup.
+
 ### CSS disabled
 
 _try to reload the page with CSS disabled. Is the page layout behaving the same as you expected?_
@@ -280,4 +282,6 @@ _try to reload the page with CSS disabled. Is the page layout behaving the same 
 
 _try to use a screen reader (JAWS or VoiceOver) to access the Website. Do you encounter any difficulty? Take some time to summarize your findings, if there is still space for improvement, go back and make further changes_
 
-- There were a few adjustments that had to be made to ensure the screenreader could overcome any possible difficulties. The HTML hierarchy required restructuring in some of the elements, such as the articles, such that the screenreader would first announce "Article" and ignore the link name. Additional ARIA tags, such as "aria-haspopup='true'", were added to the appropriate tags (e.g., `<a>` tags).
+- There were a few adjustments that had to be made to ensure the screenreader could overcome any possible difficulties. The HTML hierarchy required restructuring in some of the elements, such as the articles, such that the screenreader would first announce "Article" and ignore the link name.
+
+- Additional ARIA tags, such as `aria-haspopup="true"`, were added to the appropriate tags (e.g., `<a>` tags) for maximum usability. Some extra HTML tags were added to further improve the usability, for example a `<caption>` tag explaining the data in the table on the "article.html" page.

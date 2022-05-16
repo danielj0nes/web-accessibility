@@ -27,10 +27,10 @@
             <div class="col-4">
               <div class="btn-toolbar justify-content-end">
                 <div class="btn-group btn-group-sm">
-                  <button onclick="changeFontSize(0.1)" class="btn btn-dark font-increase-button" id="font-increase-button">
+                  <button aria-label="Increase text size" onclick="changeFontSize(0.1)" class="btn btn-dark font-increase-button" id="font-increase-button">
                     A+
                   </button>
-                  <button onclick="changeFontSize(-0.1)" class="btn btn-dark font-decrease-button" id="font-decrease-button">
+                  <button aria-label="Decrease text size" onclick="changeFontSize(-0.1)" class="btn btn-dark font-decrease-button" id="font-decrease-button">
                     A-
                   </button>
                 </div>
@@ -43,8 +43,11 @@
         <div class="container">
           <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
             <div class="navbar-brand d-lg-none">
-              <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Website logo" />
+              <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Website Logo" />
             </div>
+            <button aria-label="Toggle the navbar" class="navbar-toggler" type="button">
+              <img alt="" class="navbar-toggler-icon"/>
+            </button>
             <div class="collapse navbar-collapse" id="nav-bar-content">
               <div class="navbar-nav mr-auto">
                 <div class="nav-item">

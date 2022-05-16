@@ -71,9 +71,14 @@ h3, .subtitle {
   background-color: #ffffff;
 }
 
+#skip-links {
+  margin-top: -90px;
+}
+
 .main {
   flex: 1 0 auto;
   padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 /* added */

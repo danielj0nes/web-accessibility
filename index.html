@@ -12,13 +12,13 @@
   </head>
 
   <body class="d-flex flex-column bg-light">
-    <div aria-label="Skip links" style="visibility: hidden" id="skip-links">
-      <a href="#login">Skip to Login</a>
-      <a href="#news-events">Skip to News and Events</a>
-      <a href="#studies">Skip to Studies</a>
-      <a href="#research">Skip to Research</a>
-      <a href="#footer">Skip to Footer</a>
-    </div>
+    <ul aria-label="Skip links" style="visibility: hidden" id="skip-links">
+      <li><a href="#login">Skip to Login</a></li>
+      <li><a href="#news-events">Skip to News and Events</a></li>
+      <li><a href="#studies">Skip to Studies</a></li>
+      <li><a href="#research">Skip to Research</a></li>
+      <li><a href="#footer">Skip to Footer</a></li>
+    </ul>
     <div id="main-header">
       <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
         <div class="container">
@@ -34,10 +34,10 @@
             <div class="col-4">
               <div class="btn-toolbar justify-content-end">
                 <div class="btn-group btn-group-sm">
-                  <button onclick="changeFontSize(0.1)" class="btn btn-dark font-increase-button" id="font-increase-button">
+                  <button aria-label="Increase text size" onclick="changeFontSize(0.1)" class="btn btn-dark font-increase-button" id="font-increase-button">
                     A+
                   </button>
-                  <button onclick="changeFontSize(-0.1)" class="btn btn-dark font-decrease-button" id="font-decrease-button">
+                  <button aria-label="Decrease text size" onclick="changeFontSize(-0.1)" class="btn btn-dark font-decrease-button" id="font-decrease-button">
                     A-
                   </button>
                 </div>
@@ -50,8 +50,11 @@
         <div class="container">
           <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
             <div class="navbar-brand d-lg-none">
-              <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Website logo" />
+              <img class="rounded-right" src="./img/logo.jpg" width="40" height="40" alt="Website Logo" />
             </div>
+            <button aria-label="Toggle the navbar" class="navbar-toggler" type="button">
+              <img alt="" class="navbar-toggler-icon"/>
+            </button>
             <div class="collapse navbar-collapse" id="nav-bar-content">
               <div class="navbar-nav mr-auto">
                 <div class="nav-item">
@@ -130,7 +133,7 @@
             <ul class="list-unstyled">
               <li>
                 <div class="media mt-4">
-                  <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" alt="Iceberg" />
+                  <img class="my-1 mr-2 rounded-right" src="./img/iceberg.jpg" alt="Photo of an iceberg" />
                   <article class="media-body">
                     <section>
                       <a href="./article.html">
@@ -153,7 +156,7 @@
               </li>
               <li>
                 <div class="media mt-4">
-                  <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" alt="Universe" />
+                  <img class="my-1 mr-2 rounded-right" src="./img/universe.jpg" alt="Photo of a galaxy" />
                   <article class="media-body">
                     <section>
                       <a href="./empty.html?title=Article">
@@ -177,7 +180,7 @@
               </li>
               <li>
                 <div class="media mt-4">
-                  <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" alt="Robots" />
+                  <img class="my-1 mr-2 rounded-right" src="./img/robots.jpg" alt="Photo of a little robot" />
                   <article class="media-body">
                     <section>
                       <a href="./empty.html?title=Article">

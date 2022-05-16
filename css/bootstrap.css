@@ -2084,6 +2084,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 .was-validated .custom-select:invalid,
 .was-validated .form-control:invalid {
   border-color: #dc3545;
+  border-width: thick;
 }
 
 .custom-select.is-invalid:focus,
@@ -2885,11 +2886,17 @@ fieldset:disabled a.btn {
   font-weight: 400;
   color: #4b6660;
   background-color: transparent;
+
+  border-color: #4b665f;
+  border-width: medium;
 }
 
 .btn-link:hover {
-  color: #2b3a37;
-  background-color: transparent;
+  color: black;
+  background-color: orange;
+
+  border-color: #4b665f;
+  border-width: medium;
 }
 
 .btn-link.focus,

@@ -13,7 +13,7 @@
     <link href="./css/login.css" rel="stylesheet" />
   </head>
 
-  <body class="bg-light">
+  <body class="d-flex flex-column bg-light">
     <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
       <div class="container">
         <div class="row no-gutters">
@@ -194,7 +194,9 @@
       <div class="row no-gutters">
         <div class="col-12 col-md-5 mt-4 login">
           <div class="p-4 mr-md-3 bg-white">
-            <div class="text-primary mb-4 title">Login</div>
+            <div class="text-primary mb-4 title">
+              <h1>Login</h1>
+            </div>
             <div
               class="text-danger mb-4 d-none subtitle"
               id="login-error"
@@ -264,7 +266,9 @@
 
         <div class="col-12 col-md-7 mt-4 register">
           <div class="p-4 bg-white">
-            <div class="text-primary mb-4 title">Create new account</div>
+            <div class="text-primary mb-4 title">
+              <h1>Create new account</h1>
+            </div>
             <div
               class="text-danger mb-4 d-none subtitle"
               id="register-error"
@@ -277,7 +281,7 @@
             <form id="register-form">
               <fieldset class="form-group">
                 <legend class="form-label" id="register-address-legend">
-                  Basic information
+                  <h2>Basic information</h2>
                   <small class="text-secondary">(required)</small>
                 </legend>
                 <div class="form-row">
@@ -378,7 +382,7 @@
               <hr class="sectionCutter" />
               <fieldset class="form-group">
                 <legend class="form-label" id="register-address-legend">
-                  Additional information
+                  <h2>Additional information</h2>
                   <small class="text-secondary">(optional)</small>
                 </legend>
                 <div class="form-group">

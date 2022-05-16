@@ -100,9 +100,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-size: 100%
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 100%;
 }
 
 p {
@@ -2280,8 +2280,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #3b504b;
+  color: black;
+  background-color: orange;
   border-color: #354944;
 }
 

@@ -264,8 +264,20 @@ _In the table about average global temperature, there are some headers that span
 
 ## Exercise 7 - Accessibility test
 
-### Section goes here
+### WAVE
 
-_Question goes here_
+_Use the WAVE accessibility tool to evaluate the accessibility features of the improved Website. Comparing your finding carefully against the evaluation result, have you overlooked some issues? Or have you found something that is not reported by the plugin?_
 
-- Answer goes here
+- There were contrast errors due to less contrast of the title fonts of the articles. We solved the problem by changing the font color to Blue.
+
+### CSS disabled
+
+_try to reload the page with CSS disabled. Is the page layout behaving the same as you expected?_
+
+- Yes. Heading levels were used correctly and lists were used for making the html more structured.
+
+### Screen reader
+
+_try to use a screen reader (JAWS or VoiceOver) to access the Website. Do you encounter any difficulty? Take some time to summarize your findings, if there is still space for improvement, go back and make further changes_
+
+- ???
